@@ -744,13 +744,16 @@ section {
   font-size: 2rem;
   box-shadow: var(--shadow-soft);
   transition: all var(--transition-fast);
-  border: 3px solid transparent;
+  border: 3px solid var(--black);
+  filter: grayscale(100%);
+  color: var(--black);
 }
 
 .step:hover .step-icon {
   transform: translateY(-5px);
   box-shadow: var(--shadow-medium);
-  border-color: var(--black);
+  border-color: var(--grey-dark);
+  opacity: 0.8;
 }
 
 .step-title {
