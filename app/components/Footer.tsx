@@ -8,7 +8,6 @@ const navLinks = [
   { name: 'Philosophy', href: '#philosophy' },
   { name: 'Services', href: '#services' },
   { name: 'Clients', href: '#clients' },
-  { name: 'Contact', href: '#contact' },
 ];
 
 export default function Footer({ handleNavClick }: FooterProps) {
@@ -23,7 +22,7 @@ export default function Footer({ handleNavClick }: FooterProps) {
               <div className="contact-icon">📞</div>
               <div className="contact-text">
                 <span className="contact-label">Phone</span>
-                <span className="contact-value">+966 12 345 6789</span>
+                <span className="contact-value">+966 553 621 1111</span>
               </div>
             </div>
             <div className="contact-item">
@@ -55,8 +54,6 @@ export default function Footer({ handleNavClick }: FooterProps) {
                   {link.name}
                 </a>
               ))}
-              <a href="#" className="quick-link">Privacy Policy</a>
-              <a href="#" className="quick-link">Terms of Service</a>
             </nav>
           </div>
 

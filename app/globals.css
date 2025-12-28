@@ -1210,17 +1210,20 @@ section {
   text-align: center;
 }
 
-.loader-logo {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--black);
-  letter-spacing: -2px;
+.loader-logo-container {
   margin-bottom: 30px;
-  animation: pulse 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.loader-logo span {
-  font-weight: 300;
+.loader-logo-img {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 80px;
+  object-fit: contain;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
