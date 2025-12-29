@@ -9,6 +9,18 @@ export default function Hero({ handleNavClick }: HeroProps) {
   return (
     <section id="home" className="hero">
       <div className="hero-background">
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          style={{ display: 'block' }}
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="hero-gradient"></div>
       </div>
       <div className="hero-overlay"></div>
