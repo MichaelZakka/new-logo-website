@@ -10,11 +10,6 @@ export default function Hero({ handleNavClick }: HeroProps) {
     <section id="home" className="hero">
       <div className="hero-background">
         <div className="hero-gradient"></div>
-        <div className="hero-shapes">
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
-        </div>
       </div>
       <div className="hero-overlay"></div>
       

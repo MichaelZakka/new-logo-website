@@ -1,8 +1,10 @@
+import { Search, BarChart3, Lightbulb, Rocket } from 'lucide-react';
+
 const philosophySteps = [
-  { icon: '🔍', title: 'Analysis', number: '01' },
-  { icon: '📊', title: 'Strategy', number: '02' },
-  { icon: '💡', title: 'Vision', number: '03' },
-  { icon: '🚀', title: 'Execution', number: '04' },
+  { icon: Search, title: 'Analysis', number: '01' },
+  { icon: BarChart3, title: 'Strategy', number: '02' },
+  { icon: Lightbulb, title: 'Vision', number: '03' },
+  { icon: Rocket, title: 'Execution', number: '04' },
 ];
 
 export default function Philosophy() {
@@ -20,16 +22,21 @@ export default function Philosophy() {
             meets customer aspirations.
           </p>
           <div className="philosophy-steps">
-            {philosophySteps.map((step, index) => (
-              <div 
-                key={step.number} 
-                className={`step fade-in delay-${index + 1}`}
-              >
-                <div className="step-icon">{step.icon}</div>
-                <h4 className="step-title">{step.title}</h4>
-                <span className="step-number">{step.number}</span>
-              </div>
-            ))}
+            {philosophySteps.map((step, index) => {
+              const IconComponent = step.icon;
+              return (
+                <div 
+                  key={step.number} 
+                  className={`step fade-in delay-${index + 1}`}
+                >
+                  <div className="step-icon">
+                    <IconComponent size={32} strokeWidth={1.5} />
+                  </div>
+                  <h4 className="step-title">{step.title}</h4>
+                  <span className="step-number">{step.number}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

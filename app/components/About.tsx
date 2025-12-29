@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className="about-visual fade-in-right delay-2">
             <div className="about-image-container">
-              <div className="about-logo">
+              <div className="about-logo" style={{ color: '#393E46' }}>
                 New<span>Logo</span>
               </div>
             </div>
